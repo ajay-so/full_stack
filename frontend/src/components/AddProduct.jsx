@@ -25,7 +25,7 @@ function AddProduct() {
         }
     
         try {
-            const response = await axios.post("https://backend-6tos.onrender.com/products/add", formData, {
+            const response = await axios.post("https://fullstackcrud-z7zq.onrender.com/products/add", formData, {
                 headers: { "Content-Type": "application/json" },
             });
     

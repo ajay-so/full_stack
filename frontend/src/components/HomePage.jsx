@@ -8,7 +8,7 @@ function HomePage() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("https://backend-6tos.onrender.com/products");
+                const response = await axios.get("https://fullstackcrud-z7zq.onrender.com/products");
                 setProducts(response.data);
             } catch (error) {
                 console.error("Error fetching products:", error.message);

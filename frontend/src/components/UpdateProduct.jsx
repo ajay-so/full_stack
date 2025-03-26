@@ -21,7 +21,7 @@ function UpdateProduct() {
     // Fetch product details when the component mounts
     useEffect(() => {
         axios
-            .get(`https://backend-6tos.onrender.com/products/${id}`)
+            .get(`https://fullstackcrud-z7zq.onrender.com/products/${id}`)
             .then((res) => setFormData(res.data))
             .catch((err) => console.log("Error fetching product:", err));
     }, [id]);
@@ -35,7 +35,7 @@ function UpdateProduct() {
         }
     
         try {
-            const response = await axios.patch(`https://backend-6tos.onrender.com/products/${id}`, formData, {
+            const response = await axios.patch(`https://fullstackcrud-z7zq.onrender.com/products/${id}`, formData, {
                 headers: { "Content-Type": "application/json" },
             });
     

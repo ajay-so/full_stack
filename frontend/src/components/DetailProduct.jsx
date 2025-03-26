@@ -17,7 +17,7 @@ function DetailProduct() {
     // Fetch product details
     useEffect(() => {
         axios
-            .get(`https://backend-6tos.onrender.com/products/${id}`)
+            .get(`https://fullstackcrud-z7zq.onrender.com/products/${id}`)
             .then((res) => setProduct(res.data))
             .catch((err) => console.log(err));
     }, [id]);
@@ -25,7 +25,7 @@ function DetailProduct() {
     // Handle delete
     const handleDelete = () => {
         axios
-            .delete(`https://backend-6tos.onrender.com/products/${id}`)
+            .delete(`https://fullstackcrud-z7zq.onrender.com/products/${id}`)
             .then(() => {
                 alert("Product deleted successfully!");
                 navigate("/products"); 
