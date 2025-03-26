@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import SignUp from './components/SignUp';
 import AddProduct from './components/AddProduct';
-import Login from './components/login';
+import Login from './components/Login';
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import DetailProduct from './components/DetailProduct';
 import UpdateProduct from './components/UpdateProduct';
