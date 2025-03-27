@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import {Link} from "react-router-dom";
 import "./index.css";
 
 function HomePage() {
@@ -25,7 +26,8 @@ function HomePage() {
                 {products.length > 0 ? (
                     products.map((product, index) => (
                         <div key={index} className="col-12 col-sm-6 col-md-4 col-xl-3 p-3">
-                            <a href={`/products/${product._id}`} className="text-dark text-decoration-none">
+                            
+                            <Link to={`/products/${product._id}`} className="text-dark text-decoration-none">
                                 <div className="card-body border border-success rounded shadow-sm product_card p-2">
                                     <p className="card-text p-2">
                                         <h5><b>Name:</b> {product.name}</h5>
@@ -35,7 +37,7 @@ function HomePage() {
                                         <b>Company:</b> {product.company}
                                     </p>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     ))
                 ) : (

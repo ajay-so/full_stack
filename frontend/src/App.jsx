@@ -12,10 +12,10 @@ import UpdateProduct from './components/UpdateProduct';
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <div className="d-flex flex-column min-vh-100">
-    <Navbar />
-    <div className="flex-grow-1">        
-      <Routes>
-      <Route path="/" element={<Navigate to="/products" />} />
+      <Navbar />
+      <div className="flex-grow-1">
+        <Routes>
+          <Route path="/" element={<Navigate to="/products" />} />
           <Route path="/products" element={<HomePage />} />
           <Route path="/products/:id" element={<DetailProduct />} />
           <Route path="/products/update/:id" element={<UpdateProduct />} />
